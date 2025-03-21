@@ -12,9 +12,8 @@ class HomeModule extends Module {
   @override
   void binds(Injector i) {
     i.addSingleton(Client.new);
-
-    i.add<HomeRepository>(HomeRepositoryImp.new);
     i.add<IHomeService>(HomeService.new);
+    i.add<HomeRepository>(HomeRepositoryImp.new);
     i.add(GetHomeUseCase.new);
     i.addSingleton(HomeStore.new);
   }

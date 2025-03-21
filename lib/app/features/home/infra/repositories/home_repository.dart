@@ -1,11 +1,11 @@
 import 'package:result_dart/result_dart.dart';
 import 'package:teste2/app/features/home/domain/failures/home_failures.dart';
 import 'package:teste2/app/features/home/domain/repositories/i_home_repository.dart';
-import 'package:teste2/app/features/home/external/home_service.dart';
+import 'package:teste2/app/features/home/external/i_home_service.dart';
 import 'package:teste2/app/features/home/infra/models/home_model.dart';
 
 class HomeRepositoryImp extends HomeRepository {
-  final HomeService service;
+  final IHomeService service;
 
   HomeRepositoryImp({required this.service});
 

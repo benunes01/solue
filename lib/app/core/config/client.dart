@@ -8,7 +8,7 @@ class Client {
   Client() {
     _dio = Dio();
     _dio.interceptors.add(ApiInterceptors());
-    _dio.options.baseUrl = "https://dog.ceo/api/breeds/image/random Fetch!";
+    _dio.options.baseUrl = "https://dog.ceo/api/breeds/image/random";
     _dio.options.sendTimeout = const Duration(seconds: 60);
     _dio.options.connectTimeout = const Duration(seconds: 60);
     _dio.options.receiveTimeout = const Duration(seconds: 60);

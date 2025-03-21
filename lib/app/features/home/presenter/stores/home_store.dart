@@ -5,7 +5,13 @@ import 'package:teste2/app/features/home/presenter/state/home_state.dart';
 class HomeStore extends Cubit<HomeState> {
   final GetHomeUseCase _getHomeUseCase;
 
-  HomeStore(this._getHomeUseCase) : super(HomeLoadInProgress());
+  HomeStore(this._getHomeUseCase) : super(HomeLoadInProgress()) {
+    _init();
+  }
+
+  Future<void> _init() async {
+    await get();
+  }
 
   Future<void> get() async {
     emit(HomeLoadInProgress());
