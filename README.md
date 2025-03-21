@@ -46,13 +46,11 @@ result_dart
 
 flutter_bloc
 
-http
+dio
 
 equatable
 
 shimmer
-
-mockito
 
 ## Gerenciamento de Estado
 
