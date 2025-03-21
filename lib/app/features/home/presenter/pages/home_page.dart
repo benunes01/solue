@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:teste2/app/core/components/loading/custom_shimmer.dart';
 import 'package:teste2/app/features/home/presenter/state/home_state.dart';
 import 'package:teste2/app/features/home/presenter/stores/home_store.dart';
 
@@ -43,7 +44,7 @@ class HomePage extends StatelessWidget {
         fit: BoxFit.contain,
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
-          return Center(child: CircularProgressIndicator());
+          return CustomShimmer(height: MediaQuery.of(context).size.height);
         },
         errorBuilder: (context, error, stackTrace) {
           return _errorWidget(context, 'Erro ao carregar a imagem');
