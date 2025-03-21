@@ -1,6 +1,8 @@
 # Projeto Flutter de mostrar uma image randomica de um cachorro
 
-**Troquei o gerenciador de estado para Cubit/Bloc
+**Troquei o gerenciador de estado para Cubit/Bloc**
+
+https://github.com/user-attachments/assets/eb6eca0a-0497-437d-af8e-3de1df29636e
 
 ## Estrutura de Pastas</h2>
 
@@ -9,6 +11,7 @@
     <ul>
       <li>core
         <ul>
+          <li>components/</li>
           <li>config/</li>
           <li>utils/</li>
         </ul>
