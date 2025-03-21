@@ -1,17 +1,63 @@
-# teste2
+# Projeto Flutter de mostrar uma image randomica de um cachorro
 
-A new Flutter project.
+**Troquei o gerenciador de estado para Cubit/Bloc
 
-## Getting Started
+## Estrutura de Pastas</h2>
 
-This project is a starting point for a Flutter application.
+<ul>
+  <li>app
+    <ul>
+      <li>core
+        <ul>
+          <li>config/</li>
+          <li>utils/</li>
+        </ul>
+      </li>
+      <li>features
+        <ul>
+          <li>home
+            <ul>
+              <li>domain/</li>
+              <li>infra/</li>
+              <li>external/</li>
+              <li>presenter/</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# solue
+## Versões Utilizadas
+
+- **Flutter:** 3.27.3 (channel stable)
+- **Dart:** 3.6.1
+
+## Packages
+flutter_modular
+
+result_dart
+
+flutter_bloc
+
+http
+
+equatable
+
+shimmer
+
+mockito
+
+## Gerenciamento de Estado
+
+Para o gerenciamento de estado, foi utilizado o **Cubit/Bloc**.
+
+## Rodar o projeto
+
+```sh
+flutter pub get
+
+flutter run
